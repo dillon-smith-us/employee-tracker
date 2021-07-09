@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'password',
+    password: 'Drmario1$',
     database: 'employee_trackerdb',
 });
 
@@ -53,7 +53,7 @@ function startPrompt() {
                 addEmployee();
             break;
 
-            case "Update employee role:":
+            case "Update employee:":
                 updateEmployee();
             break;
 
@@ -203,8 +203,9 @@ function updateEmployee() {
         console.log(res)
         inquirer.prompt([
             {
-                name: "lastname",
+                name: "lastName",
                 type: "rawlist",
+                
                 choices: function() {
                     let lastName = [];
                     for (let i = 0; i < res.length; i++) {
@@ -221,9 +222,9 @@ function updateEmployee() {
                 choices: chooseRole()
             },
         ])
-          .then(function(response) {
+          .then((response) => {
             let roleId = chooseRole().indexOf(response.role) + 1
-            connection.query("UPDATE employee SET WHERE ?",
+            connection.query("UPDATE employee SET ? WHERE ?",
             {
                 last_name: response.lastName
             },
@@ -233,7 +234,7 @@ function updateEmployee() {
             function(err){
                 
                 if (err) throw err
-                console.table(val)
+                console.table(response)
                 startPrompt()
             })
         });
