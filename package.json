@@ -1,0 +1,32 @@
+{
+  "name": "homework10",
+  "version": "1.0.0",
+  "description": "employee-tracker",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "inquirer": "^8.1.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "y": "^0.3.2"
+  },
+  "devDependencies": {
+    "console.table": "^0.10.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillon-smith-us/employee-tracker.git"
+  },
+  "keywords": [
+    "employee-tracker"
+  ],
+  "author": "Dillon Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dillon-smith-us/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/dillon-smith-us/employee-tracker#readme"
+}
