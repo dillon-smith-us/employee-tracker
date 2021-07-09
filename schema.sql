@@ -35,18 +35,6 @@ VALUE ("Engineering Lead", 120000, 1), ("Sales Lead", 120000, 2), ("Legal Team L
 
 -- EMPLOYEES SEED
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("John", "Doe", null, 1);
-INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Jane", "Doe", null, 2);
-INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Walt", "Disney", null, 3);
-INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("George", "Lucas", 1, 4);
-INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Oprah", "Winfrey", 2, 5);
-INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Bill", "Gates", 3, 6);
-INSERT INTO employee (first_name, last_name, manager_id, role_id)
-VALUE ("Steve", "Jobs", null, 7);
+VALUE ("John", "Doe", null, 1), ("Jane", "Doe", null, 2), ("Walt", "Disney", null, 3), ("George", "Lucas", 1, 4), ("Oprah", "Winfrey", 2, 5), ("Bill", "Gates", 3, 6), ("Steve", "Jobs", null, 7);
 
 
